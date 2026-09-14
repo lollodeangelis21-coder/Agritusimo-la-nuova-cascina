@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agriturismo La Nuova Cascina | Ristorante & Pizzeria Montopoli di Sabina</title>
+  <meta name="description" content="Agriturismo La Nuova Cascina a Montopoli di Sabina (Ponte Sfondato). Prodotti a Km 0, forno a legna, cucina tipica sabina e ampio parcheggio. Prenota ora!">
+  
+  <!-- Google Fonts: Playfair Display for elegant headers, Plus Jakarta Sans for ultra-legible UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for crisp vector icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#2A5A2B',       /* Verde bandiera/insegna */
+              greenDark: '#1E431F',   /* Verde scuro contrasto */
+              greenLight: '#EBF3EC',  /* Fondo tenue salvia */
+              yellow: '#F5B324',      /* Giallo caldo insegna */
+              yellowLight: '#FEF6E4', /* Fondo tenue giallo */
+              yellowHover: '#DFA015',
+              cream: '#FAF7F0',       /* Fondo caldo pergamena */
+              warmBg: '#F5EFE6',      /* Alternanza sezioni */
+              rust: '#C4492C',        /* Rosso terracotta accenti */
+              dark: '#1F241F',        /* Testo ad alto contrasto */
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            hand: ['"Caveat"', 'cursive', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom refined touches and smooth transitions */
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(26, 46, 26, 0.82) 0%, rgba(20, 36, 20, 0.88) 100%);
+    }
+    .text-shadow-sm {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    .badge-shadow {
+      box-shadow: 0 4px 14px rgba(42, 90, 43, 0.12);
+    }
+    /* Hide scrollbar for tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-yellow selection:text-brand-dark">
+
+  <div class="bg-brand-greenDark text-brand-cream text-xs sm:text-sm py-2 px-4 border-b border-brand-green/40">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-3 sm:space-x-6 overflow-hidden">
+        <span class="inline-flex items-center font-medium">
+          <i class="fa-solid fa-leaf text-brand-yellow mr-1.5"></i> Prodotti a Km 0
+        </span>
+        <span class="hidden sm:inline-flex items-center font-medium">
+          <i class="fa-solid fa-fire-flame-curved text-brand-yellow mr-1.5"></i> Forno a Legna (Solo a Cena)
+        </span>
+        <span class="inline-flex items-center text-xs bg-brand-green/60 px-2 py-0.5 rounded text-white font-semibold">
+          <i class="fa-solid fa-square-parking text-brand-yellow mr-1.5"></i> Ampio Parcheggio
+        </span>
+      </div>
+      <div class="flex items-center space-x-4 ml-auto">
+        <a href="tel:07651940931" class="hover:text-brand-yellow transition-colors inline-flex items-center">
+          <i class="fa-solid fa-phone text-brand-yellow mr-1.5"></i>
+          <span class="font-semibold">324 868 7392</span>
+        </a>
+        <a href="https://www.instagram.com/agriturismolanuovacascina/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-yellow transition-colors inline-flex items-center text-sm" title="Seguici su Instagram">
+          <i class="fa-brands fa-instagram text-base"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-stone-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo fedele al cartello e al bigliettino da visita -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <!-- Logo SVG stilizzato secondo l'insegna originale -->
+          <div class="w-14 h-14 relative flex-shrink-0 flex items-center justify-center">
+            <svg viewBox="0 0 160 140" class="w-full h-full drop-shadow-sm transition-transform group-hover:scale-105 duration-300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Semicerchio sole giallo -->
+              <ellipse cx="80" cy="80" rx="56" ry="50" fill="#F5B324" fill-opacity="0.95"/>
+              <!-- Tetto casetta bianco e grigio sagomato -->
+              <path d="M24 82 L80 34 L136 82 L128 92 L80 50 L32 92 Z" fill="#2A302A"/>
+              <!-- Camino con fumo -->
+              <rect x="100" y="32" width="12" height="22" fill="#2A302A" rx="2"/>
+              <!-- Nuvola di fumo stilizzata a cuore orizzontale -->
+              <path d="M102 24 C96 18, 114 10, 122 16 C128 20, 118 28, 108 24 Z" stroke="#2A302A" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <!-- Steccato verde a sinistra -->
+              <path d="M20 90 L20 115 M27 88 L27 115 M34 90 L34 115 M18 100 L36 100 M18 110 L36 110" stroke="#2A5A2B" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-baseline gap-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-green">La</span>
+              <span class="font-serif font-bold text-2xl sm:text-2xl text-brand-dark leading-none">Nuova Cascina</span>
+            </div>
+            <span class="bg-brand-green text-white text-[9px] sm:text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full mt-1 text-center shadow-xs">
+              Agriturismo • Pizzeria
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-7 text-[15px] font-medium text-stone-700">
+          <a href="#home" class="hover:text-brand-green transition-colors py-2 font-semibold text-brand-green">Home</a>
+          <a href="#chi-siamo" class="hover:text-brand-green transition-colors py-2">La Cascina</a>
+          <a href="#menu" class="hover:text-brand-green transition-colors py-2 flex items-center gap-1">
+            <span>Menù</span>
+            <span class="text-[10px] bg-brand-yellow/30 text-amber-900 px-1.5 py-0.2 rounded font-bold">Km0</span>
+          </a>
+          <a href="#eventi" class="hover:text-brand-green transition-colors py-2">Eventi & Feste</a>
+          <a href="#orari" class="hover:text-brand-green transition-colors py-2">Orari & Info</a>
+          <a href="#contatti" class="hover:text-brand-green transition-colors py-2">Dove Siamo</a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-2.5">
+          <!-- WhatsApp Direct -->
+          <a href="https://wa.me/393248687392?text=Salve%2C%20vorrei%20avere%20informazioni%20o%20prenotare%20un%20tavolo%20presso%20La%20Nuova%20Cascina" 
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-3.5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow active:scale-95"
+             title="Scrivi su WhatsApp al 324 868 7392">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span class="font-semibold">WhatsApp</span>
+          </a>
+          
+          <!-- Booking Modal Trigger -->
+          <button onclick="openBookingModal()"
+             class="inline-flex items-center gap-2 bg-brand-yellow hover:bg-brand-yellowHover text-stone-900 font-bold text-sm px-4 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md active:scale-95">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>Prenota Tavolo</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <button onclick="openBookingModal()" class="sm:hidden bg-brand-yellow text-stone-900 p-2 rounded-lg text-sm font-bold">
+            <i class="fa-regular fa-calendar-check"></i>
+          </button>
+          <button id="mobileMenuBtn" aria-label="Apri Menu" class="p-2.5 rounded-xl text-stone-800 hover:bg-stone-100 focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-stone-200 px-5 pt-3 pb-6 space-y-3 shadow-xl">
+      <div class="grid grid-cols-2 gap-2 pb-2">
+        <a href="tel:324 868 7392" class="flex items-center justify-center gap-2 bg-brand-green text-white py-2.5 rounded-xl text-sm font-semibold">
+          <i class="fa-solid fa-phone"></i> Chiama Fisso
+        </a>
+        <a href="https://wa.me/393248687392?text=Salve%20vorrei%20prenotare%20un%20tavolo" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-emerald-600 text-white py-2.5 rounded-xl text-sm font-semibold">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <a href="#home" class="mobile-nav-link block text-stone-800 font-medium py-2 border-b border-stone-100">Home</a>
+      <a href="#chi-siamo" class="mobile-nav-link block text-stone-800 font-medium py-2 border-b border-stone-100">La Cascina & Tradizione</a>
+      <a href="#menu" class="mobile-nav-link block text-stone-800 font-medium py-2 border-b border-stone-100">Il Nostro Menù (Carni Km 0 & Pizzeria)</a>
+      <a href="#eventi" class="mobile-nav-link block text-stone-800 font-medium py-2 border-b border-stone-100">Eventi, Feste & Cerimonie</a>
+      <a href="#orari" class="mobile-nav-link block text-stone-800 font-medium py-2 border-b border-stone-100">Orari di Apertura</a>
+      <a href="#contatti" class="mobile-nav-link block text-stone-800 font-medium py-2">Dove Siamo & Mappa</a>
+      <div class="pt-2">
+        <button onclick="openBookingModal()" class="w-full bg-brand-yellow hover:bg-brand-yellowHover text-stone-900 font-bold py-3 rounded-xl shadow text-center">
+          <i class="fa-regular fa-calendar-check mr-2"></i> Prenota un Tavolo o Richiedi Info
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="relative min-h-[90vh] flex items-center justify-center bg-stone-900 overflow-hidden">
+    <!-- Immagine di sfondo ad altissima risoluzione con overlay sfumato -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" 
+           alt="Cucina tipica e atmosfera agriturismo" 
+           class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
+           onerror="this.src='https://placehold.co/1920x1080/233c23/ffffff?text=Agriturismo+La+Nuova+Cascina'">
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <!-- Contenuto Hero -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
+      
+      <!-- Badge in evidenza estratti dall'insegna -->
+      <div class="inline-flex flex-wrap items-center justify-center gap-2 mb-6 animate-fade-in">
+        <span class="bg-brand-yellow text-stone-950 font-bold text-xs sm:text-sm px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+          <i class="fa-solid fa-seedling mr-1"></i> Prodotti a Km 0
+        </span>
+        <span class="bg-white/20 backdrop-blur-md text-white font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full border border-white/30">
+          <i class="fa-solid fa-fire text-brand-yellow mr-1"></i> Forno a Legna
+        </span>
+        <span class="bg-brand-green/80 backdrop-blur-md text-emerald-100 font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full border border-emerald-400/40">
+          <i class="fa-solid fa-square-parking text-white mr-1"></i> Ampio Parcheggio Custodito
+        </span>
+      </div>
+
+      <!-- Titolo principale con font serif classico -->
+      <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 text-shadow-sm leading-tight">
+        Il Gusto della Tradizione <br>
+        <span class="text-brand-yellow italic font-medium font-hand text-5xl sm:text-7xl">nel Cuore della Sabina</span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-lg sm:text-xl text-stone-200 font-light mb-10 leading-relaxed">
+        Benvenuti a <strong class="font-semibold text-white">La Nuova Cascina</strong> a Montopoli di Sabina. Carni selezionate del territorio, primi piatti con pasta stesa a mano e la vera pizza cotta nel forno a legna.
+      </p>
+
+      <!-- Pulsanti di azione rapida -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+        <button onclick="openBookingModal()" class="w-full sm:w-auto bg-brand-yellow hover:bg-brand-yellowHover text-stone-900 font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center gap-2">
+          <i class="fa-regular fa-calendar-check text-lg"></i>
+          <span>Prenota un Tavolo</span>
+        </button>
+        <a href="#eventi" class="w-full sm:w-auto bg-white/15 hover:bg-white/25 text-white border border-white/40 backdrop-blur-sm font-semibold px-7 py-4 rounded-xl transition-all duration-200 flex items-center justify-center gap-2">
+          <i class="fa-solid fa-champagne-glasses text-brand-yellow"></i>
+          <span>Preventivo Eventi</span>
+        </a>
+      </div>
+
+      <!-- Orari compatti hero -->
+      <div class="mt-12 pt-8 border-t border-white/15 flex flex-wrap items-center justify-center gap-6 text-sm text-stone-300">
+        <div class="flex items-center gap-2">
+          <i class="fa-regular fa-clock text-brand-yellow"></i>
+          <span>Aperti <strong>dal Giovedì alla Domenica</strong> (Pranzo e Cena)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-pizza-slice text-brand-yellow"></i>
+          <span>Pizzeria attiva <strong>solo a cena</strong></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indicatore di scorrimento -->
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10 text-stone-400 hidden sm:block animate-bounce">
+      <a href="#chi-siamo" aria-label="Scorri giù">
+        <i class="fa-solid fa-chevron-down text-lg"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-brand-green text-white py-6 shadow-inner relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-emerald-700/60">
+        
+        <div class="flex items-center justify-center md:justify-start gap-4 px-4 pt-2 md:pt-0">
+          <div class="w-12 h-12 rounded-full bg-brand-yellow/20 flex items-center justify-center text-brand-yellow text-xl flex-shrink-0">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-wider text-amber-200">Dove Siamo</h4>
+            <p class="text-stone-100 text-sm">Via Ternana 66, Montopoli in Sabina (RI)</p>
+            <span class="text-xs text-stone-300 font-mono">Zona Ponte Sfondato</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center md:justify-start gap-4 px-4 pt-4 md:pt-0">
+          <div class="w-12 h-12 rounded-full bg-brand-yellow/20 flex items-center justify-center text-brand-yellow text-xl flex-shrink-0">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-wider text-amber-200">Prenotazioni Telefoniche</h4>
+            <p class="text-stone-100 text-sm font-semibold">324 868 7392</p>
+            <span class="text-xs text-stone-300">Assistenza attiva su WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center md:justify-start gap-4 px-4 pt-4 md:pt-0">
+          <div class="w-12 h-12 rounded-full bg-brand-yellow/20 flex items-center justify-center text-brand-yellow text-xl flex-shrink-0">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-wider text-amber-200">La Nostra Offerta</h4>
+            <p class="text-stone-100 text-sm">Pranzo e Cena alla carta</p>
+            <span class="text-xs text-stone-300">Carne Km 0 • Forno a Legna la sera</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-siamo" class="py-20 lg:py-28 bg-brand-cream relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Blocco Testo e Valori dell'Agriturismo -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 text-brand-green font-bold text-sm uppercase tracking-widest bg-brand-greenLight px-3.5 py-1.5 rounded-full">
+            <i class="fa-solid fa-wheat-awn text-brand-yellow"></i>
+            Tradizione e Passione Sabina
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-dark leading-tight">
+            Sapori Veri, Materie Prime Selezionate e Accoglienza Casareccia
+          </h2>
+
+          <!-- Divisore grafico con simbolo spiga/ulivo stile Poggio degli Ulivi -->
+          <div class="flex items-center gap-3 py-1">
+            <div class="h-[2px] w-12 bg-brand-green"></div>
+            <i class="fa-solid fa-mortar-pestle text-brand-green"></i>
+            <div class="h-[2px] w-12 bg-brand-yellow"></div>
+          </div>
+
+          <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+            All’<strong>Agriturismo La Nuova Cascina</strong> crediamo nella genuinità che non ha bisogno di artifici. Situati lungo la Via Ternana a Montopoli di Sabina, offriamo ai nostri ospiti il calore tipico delle domeniche in famiglia e il profumo autentico delle cose buone preparate con cura.
+          </p>
+
+          <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+            Le nostre <strong>carni provengono da allevamenti a chilometro zero</strong>, cucinate con maestria per esaltarne la tenerezza. La sera il nostro forno a legna artigianale si accende per sfornare pizze ad alta digeribilità, arricchite dall’eccellenza dell'olio extravergine sabino.
+          </p>
+
+          <!-- Griglia 4 Punti di Forza -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="bg-white p-4 rounded-xl border border-stone-200/80 shadow-xs flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 flex-shrink-0 text-lg">
+                <i class="fa-solid fa-drumstick-bite"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Carne Locale a Km 0</h4>
+                <p class="text-stone-500 text-xs mt-0.5">Tagli selezionati alla brace e preparazioni tradizionali.</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-stone-200/80 shadow-xs flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-800 flex-shrink-0 text-lg">
+                <i class="fa-solid fa-bottle-droplet"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Olio Tipico della Sabina</h4>
+                <p class="text-stone-500 text-xs mt-0.5">Condimento genuino e materie prime stagionali.</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-stone-200/80 shadow-xs flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center text-orange-700 flex-shrink-0 text-lg">
+                <i class="fa-solid fa-fire-burner"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Forno a Legna Serale</h4>
+                <p class="text-stone-500 text-xs mt-0.5">La vera pizza italiana fragrante e ben lievitata.</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-stone-200/80 shadow-xs flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700 flex-shrink-0 text-lg">
+                <i class="fa-solid fa-square-parking"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Ampio Parcheggio Comodo</h4>
+                <p class="text-stone-500 text-xs mt-0.5">Spazio privato per sostare senza stress anche per grandi gruppi.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante rapido WhatsApp -->
+          <div class="pt-4 flex items-center gap-4">
+            <a href="https://wa.me/393248687392?text=Buongiorno%2C%20vorrei%20chiedere%20informazioni%20sulla%20disponibilit%C3%A0" 
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-stone-900 font-bold bg-brand-yellow hover:bg-brand-yellowHover px-6 py-3 rounded-xl transition-colors shadow-sm">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Chiedi al Personale su WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Composizione Immagini d'Atmosfera -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Immagine Principale: Carne e Cucina -->
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] relative">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80" 
+                   alt="Carne alla griglia e sapori italiani" 
+                   class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                   onerror="this.src='https://placehold.co/800x1000/2A5A2B/FFFFFF?text=Cucina+Km+0'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <span class="bg-brand-yellow text-stone-950 font-bold text-xs uppercase px-3 py-1 rounded-full">Autenticità</span>
+                <p class="font-serif text-xl font-bold mt-2">Dalla nostra terra direttamente alla vostra tavola</p>
+              </div>
+            </div>
+
+            <!-- Card sovrapposta: Biglietto da visita rievocativo -->
+            <div class="absolute -bottom-8 -left-6 sm:-left-8 bg-white p-5 rounded-2xl shadow-xl border border-stone-200 max-w-[260px] hidden sm:block">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 rounded-full bg-brand-green flex items-center justify-center text-brand-yellow font-bold text-sm">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <h5 class="font-bold text-xs text-stone-900 leading-tight">Agriturismo Garantito</h5>
+                  <p class="text-[11px] text-stone-500">Ponte Sfondato - Rieti</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 italic">"Adatto a famiglie, compleanni, gruppi e pranzi domenicali all'insegna del relax."</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="menu" class="py-20 bg-brand-warmBg border-y border-stone-200 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Intestazione Sezione Menù -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-green font-bold text-xs sm:text-sm uppercase tracking-widest bg-emerald-100 px-4 py-1.5 rounded-full inline-block mb-3">
+          Proposta Gastronomica
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-dark mb-4">
+          Il Nostro Menù alla Carta
+        </h2>
+        <p class="text-stone-600 text-base sm:text-lg">
+          Piatti della tradizione preparati espressi ogni giorno dal Giovedì alla Domenica. <br class="hidden sm:inline">
+          La sera aggiungiamo le nostre pizze al forno a legna.
+        </p>
+
+        <!-- Divisore con icona forchetta e coltello -->
+        <div class="flex items-center justify-center gap-3 my-5">
+          <div class="h-[1px] w-16 bg-stone-300"></div>
+          <i class="fa-solid fa-utensils text-brand-yellow text-lg"></i>
+          <div class="h-[1px] w-16 bg-stone-300"></div>
+        </div>
+      </div>
+
+      <!-- 3 Card Macro-Aree Menù (Stile Poggio degli Ulivi) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Card 1: Primi & Tradizione -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200/80 group hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3d5d6281249?auto=format&fit=crop&w=600&q=80" 
+                 alt="Primi piatti tradizionali" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                 onerror="this.src='https://placehold.co/600x400/2A5A2B/FFFFFF?text=Primi+Tradizionali'">
+            <div class="absolute top-3 left-3 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Pasta Fatta in Casa
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Antipasti & Primi Sabini</h3>
+              <p class="text-stone-600 text-sm mb-4 leading-relaxed">
+                Salumi tipici, formaggi del territorio, pasta tirata a mano, sughi ricchi e la genuinità dei profumi di campagna.
+              </p>
+            </div>
+            <ul class="text-xs text-stone-600 space-y-1.5 border-t border-stone-100 pt-3">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Antipasto abbondante della Cascina</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Fettuccine e gnocchi artigianali</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Olio Extravergine Sabino</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2: Carni a Km 0 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200/80 group hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" 
+                 alt="Carni a Km 0 alla brace" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                 onerror="this.src='https://placehold.co/600x400/2A5A2B/FFFFFF?text=Carni+Km+0'">
+            <div class="absolute top-3 left-3 bg-brand-yellow text-stone-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Specialità Km 0
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Secondi di Carne alla Brace</h3>
+              <p class="text-stone-600 text-sm mb-4 leading-relaxed">
+                Il fiore all'occhiello dell'agriturismo: carni certificate da allevamenti locali, cotte al punto giusto con contorni di stagione.
+              </p>
+            </div>
+            <ul class="text-xs text-stone-600 space-y-1.5 border-t border-stone-100 pt-3">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Grigliate miste e tagliate</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Abbacchio e arrosti della tradizione</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Contorni dell'orto ripassati</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3: Pizza con Forno a Legna -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200/80 group hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" 
+                 alt="Pizza cotta nel forno a legna" 
+                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                 onerror="this.src='https://placehold.co/600x400/2A5A2B/FFFFFF?text=Pizzeria+Forno+a+Legna'">
+            <div class="absolute top-3 left-3 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Solo a Cena
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Pizzeria con Forno a Legna</h3>
+              <p class="text-stone-600 text-sm mb-4 leading-relaxed">
+                Impasto a lenta lievitazione, stesura a mano e cottura rigorosa a legna per una pizza croccante, saporita e leggera.
+              </p>
+            </div>
+            <ul class="text-xs text-stone-600 space-y-1.5 border-t border-stone-100 pt-3">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Pizze classiche e speciali della casa</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Mozzarella fiordilatte e pomodoro italiano</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Fritti artigianali di benvenuto</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-lg border border-stone-200/80 mb-12">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-stone-200 pb-6 mb-8">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green">Selezione Piatti del Giorno</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900">Esempi dalle nostre proposte alla carta</h3>
+          </div>
+          <div class="text-xs sm:text-sm text-stone-500 italic">
+            * I piatti variano settimanalmente secondo la disponibilità dell'orto e della carne.
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          
+          <div class="flex justify-between items-start border-b border-stone-100 pb-4">
+            <div>
+              <h4 class="font-bold text-stone-900 text-base">Gran Tagliere La Nuova Cascina</h4>
+              <p class="text-xs text-stone-500 mt-1">Selezione di salumi sabini, formaggi locali con miele, bruschette con olio EVO nostro</p>
+            </div>
+            <span class="font-bold text-brand-green text-sm bg-brand-greenLight px-2.5 py-1 rounded">Antipasto</span>
+          </div>
+
+          <div class="flex justify-between items-start border-b border-stone-100 pb-4">
+            <div>
+              <h4 class="font-bold text-stone-900 text-base">Fettuccine Fatte a Mano al Ragù di Carne Km 0</h4>
+              <p class="text-xs text-stone-500 mt-1">Sfoglia all'uovo trafilata ruvida con ragù a cottura lenta della tradizione contadina</p>
+            </div>
+            <span class="font-bold text-brand-green text-sm bg-brand-greenLight px-2.5 py-1 rounded">Primo</span>
+          </div>
+
+          <div class="flex justify-between items-start border-b border-stone-100 pb-4">
+            <div>
+              <h4 class="font-bold text-stone-900 text-base">Grigliata Mista di Carne con Patate al Forno</h4>
+              <p class="text-xs text-stone-500 mt-1">Salsiccia casareccia, costoletta d'abbacchio, braciola di maiale e vitello locale</p>
+            </div>
+            <span class="font-bold text-brand-green text-sm bg-brand-greenLight px-2.5 py-1 rounded">Secondo</span>
+          </div>
+
+          <div class="flex justify-between items-start border-b border-stone-100 pb-4">
+            <div>
+              <h4 class="font-bold text-stone-900 text-base">Pizza della Cascina (Forno a Legna)</h4>
+              <p class="text-xs text-stone-500 mt-1">Pomodoro, fiordilatte, salsiccia fresca Km0, funghi porcini e filo d'olio a crudo</p>
+            </div>
+            <span class="font-bold text-orange-700 text-sm bg-orange-100 px-2.5 py-1 rounded">Pizza Sera</span>
+          </div>
+
+        </div>
+
+        <!-- Box Scarica Menù PDF o Richiedi Aggiornato -->
+        <div class="mt-10 pt-8 border-t border-dashed border-stone-300 bg-amber-50/50 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4 text-center sm:text-left">
+            <div class="w-14 h-14 rounded-2xl bg-brand-yellow/30 flex items-center justify-center text-amber-900 text-2xl flex-shrink-0">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-900 text-base sm:text-lg">Vuoi consultare il menù completo aggiornato?</h4>
+              <p class="text-stone-600 text-xs sm:text-sm">Scarica la versione PDF o chiedici la proposta per il weekend direttamente via WhatsApp.</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto justify-center">
+            <!-- Pulsante download PDF (predisposto per collegare il file) -->
+            <a href="#contatti" onclick="alert('Sezione PDF in fase di aggiornamento stagionale! Contattaci su WhatsApp per ricevere il menù del giorno in anteprima.')"
+               class="inline-flex items-center justify-center gap-2 bg-stone-800 hover:bg-stone-900 text-white font-bold text-sm px-5 py-3 rounded-xl transition-all shadow-sm">
+              <i class="fa-solid fa-arrow-down-to-line"></i>
+              <span>Scarica Menù (PDF)</span>
+            </a>
+            <a href="https://wa.me/393248687392?text=Buongiorno%2C%20vorrei%20ricevere%20il%20men%C3%B9%20del%20giorno%20della%20Cascina" 
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-3 rounded-xl transition-all shadow-sm">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Chiedi Menù su WA</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="eventi" class="py-20 lg:py-28 bg-brand-cream relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Colonna Immagine Eventi -->
+        <div class="lg:col-span-5 order-2 lg:order-1">
+          <div class="relative">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] relative">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80" 
+                   alt="Tavolata eventi e compleanni" 
+                   class="w-full h-full object-cover"
+                   onerror="this.src='https://placehold.co/800x1000/2A5A2B/FFFFFF?text=Feste+e+Cerimonie'">
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <span class="bg-brand-green text-emerald-100 font-bold text-xs uppercase px-3 py-1 rounded-full">Momenti Speciali</span>
+                <h4 class="font-serif text-2xl font-bold mt-2">La tua festa nella quiete della Sabina</h4>
+                <p class="text-xs text-stone-200 mt-1">Spazio per tutti gli invitati e comodo parcheggio riservato.</p>
+              </div>
+            </div>
+            
+            <!-- Badge Fluttuante Parcheggio -->
+            <div class="absolute -top-5 -right-5 bg-brand-yellow text-stone-950 font-bold p-4 rounded-2xl shadow-lg text-center">
+              <i class="fa-solid fa-square-parking text-2xl"></i>
+              <div class="text-xs uppercase font-extrabold mt-1">Parcheggio<br>Garantito</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonna Contenuto e Form Preventivo Rapido -->
+        <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+          <span class="text-brand-green font-bold text-xs sm:text-sm uppercase tracking-widest bg-brand-greenLight px-3.5 py-1.5 rounded-full inline-block">
+            Cerimonie & Ricorrenze
+          </span>
+
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-dark leading-tight">
+            Festeggia i Tuoi Momenti Importanti alla Cascina
+          </h2>
+
+          <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+            Organizziamo rinfreschi, pranzi di compleanno, cresime, battesimi, comunioni, lauree e cene aziendali o tra amici. Creiamo insieme a te <strong>menù personalizzati a prezzo concordato</strong>, con opzioni di carne Km0 o giropizza al forno a legna.
+          </p>
+
+          <!-- Elenco vantaggi per le feste -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-stone-700 text-sm font-medium py-2">
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-circle-check text-brand-green"></i>
+              <span>Menù dedicati per adulti e bambini</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-circle-check text-brand-green"></i>
+              <span>Ampio parcheggio per tutte le auto</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-circle-check text-brand-green"></i>
+              <span>Possibilità di concordare torta e bevande</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-circle-check text-brand-green"></i>
+              <span>Atmosfera accogliente e tranquilla</span>
+            </div>
+          </div>
+
+          <!-- Box Interattivo Richiesta Preventivo Rapida -->
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-md">
+            <h4 class="font-serif font-bold text-xl text-stone-900 mb-2">Richiedi disponibilità o preventivo senza impegno</h4>
+            <p class="text-xs text-stone-500 mb-6">Compila i pochi dati o scrivici direttamente per un preventivo su misura.</p>
+
+            <form id="eventForm" onsubmit="handleEventSubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Nome o Referente *</label>
+                  <input type="text" id="eventName" required placeholder="Es. Marco Rossi" 
+                         class="w-full text-sm px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Telefono / Cellulare *</label>
+                  <input type="tel" id="eventPhone" required placeholder="Es. 340 1234567" 
+                         class="w-full text-sm px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Tipo Evento</label>
+                  <select id="eventType" class="w-full text-sm px-3 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none bg-white">
+                    <option value="Compleanno">Compleanno</option>
+                    <option value="Cerimonia (Battesimo/Comunione)">Cerimonia</option>
+                    <option value="Cena di Gruppo / Amici">Gruppo / Amici</option>
+                    <option value="Altro Evento">Altro</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">N° Persone stimate</label>
+                  <input type="number" id="eventGuests" min="5" placeholder="Es. 25" 
+                         class="w-full text-sm px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Data indicativa</label>
+                  <input type="date" id="eventDate" 
+                         class="w-full text-sm px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none">
+                </div>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                <button type="submit" class="flex-1 bg-brand-green hover:bg-brand-greenDark text-white font-bold py-3.5 px-6 rounded-xl transition-colors shadow-sm flex items-center justify-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-lg text-emerald-300"></i>
+                  <span>Invia Richiesta su WhatsApp</span>
+                </button>
+                <a href="tel:3248687392" class="sm:w-auto bg-stone-100 hover:bg-stone-200 text-stone-800 font-semibold py-3.5 px-6 rounded-xl transition-colors text-center text-sm flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>Chiama Direttamente</span>
+                </a>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="orari" class="py-20 bg-brand-warmBg border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-green font-bold text-xs sm:text-sm uppercase tracking-widest bg-emerald-100 px-4 py-1.5 rounded-full inline-block mb-3">
+          Orari e Informazioni Pratiche
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-dark mb-4">
+          Quando Trovarci e Dove Siamo
+        </h2>
+        <p class="text-stone-600 text-base sm:text-lg">
+          Ti aspettiamo a Montopoli di Sabina, in località Ponte Sfondato, con un comodo e ampio parcheggio riservato ai nostri clienti.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Tabella Orari (Dati fedeli all'insegna) -->
+        <div class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 pb-6 border-b border-stone-100">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-800 text-xl flex-shrink-0">
+                <i class="fa-regular fa-calendar-days"></i>
+              </div>
+              <div>
+                <h3 class="font-serif font-bold text-xl text-stone-900">Giorni & Orari di Servizio</h3>
+                <p class="text-xs text-stone-500">Cucina agrituristica e pizzeria</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 py-6">
+              
+              <!-- Giovedì -->
+              <div class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-100">
+                <span class="font-bold text-stone-800 text-sm">Giovedì</span>
+                <span class="text-xs sm:text-sm font-semibold text-brand-green">Pranzo e Cena</span>
+              </div>
+
+              <!-- Venerdì -->
+              <div class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-100">
+                <div>
+                  <span class="font-bold text-stone-800 text-sm">Venerdì</span>
+                  <span class="block text-[10px] text-amber-800 font-medium">Possibilità menù fisso carne o pizza</span>
+                </div>
+                <span class="text-xs sm:text-sm font-semibold text-brand-green">Pranzo e Cena</span>
+              </div>
+
+              <!-- Sabato -->
+              <div class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-100">
+                <span class="font-bold text-stone-800 text-sm">Sabato</span>
+                <span class="text-xs sm:text-sm font-semibold text-brand-green">Pranzo e Cena</span>
+              </div>
+
+              <!-- Domenica -->
+              <div class="flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-100">
+                <div>
+                  <span class="font-bold text-stone-800 text-sm">Domenica</span>
+                  <span class="block text-[10px] text-stone-500">Ideale per famiglie e pranzi domenicali</span>
+                </div>
+                <span class="text-xs sm:text-sm font-semibold text-brand-green">Pranzo e Cena</span>
+              </div>
+
+              <!-- Lunedì - Mercoledì -->
+              <div class="flex items-center justify-between p-3 rounded-xl bg-red-50/70 border border-red-100 text-stone-500">
+                <span class="font-medium text-xs sm:text-sm">Lunedì, Martedì, Mercoledì</span>
+                <span class="text-xs font-bold text-red-700 uppercase">Chiusi</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Nota specifica sul forno a legna serale -->
+          <div class="bg-brand-greenLight border border-brand-green/30 rounded-2xl p-4 mt-2">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-fire text-brand-yellow text-lg mt-0.5"></i>
+              <div class="text-xs text-emerald-950">
+                <strong class="font-bold">Nota per la Pizzeria:</strong> La pizza cotta con forno a legna è attiva <strong class="underline">esclusivamente nel turno serale (a cena)</strong> dal giovedì alla domenica. A pranzo il servizio è dedicato alla cucina e alle carni alla carta.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mappa e Coordinate di Arrivo -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between pb-4 border-b border-stone-100">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-brand-green text-xl flex-shrink-0">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif font-bold text-xl text-stone-900">Come Raggiungerci</h3>
+                  <p class="text-xs text-stone-500">Via Ternana 66, Montopoli in Sabina (RI)</p>
+                </div>
+              </div>
+              <a href="https://maps.google.com/?q=Via+Ternana+66+Montopoli+di+Sabina" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 text-xs font-bold text-brand-green hover:underline">
+                <span>Apri in Google Maps</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <!-- Inquadratura Mappa Interattiva (Iframe sicuro) -->
+            <div class="w-full h-64 sm:h-72 rounded-2xl overflow-hidden my-4 border border-stone-200 shadow-inner relative bg-stone-100">
+              <iframe 
+                title="Mappa Agriturismo La Nuova Cascina"
+                class="w-full h-full border-0" 
+                loading="lazy" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=Via%20Ternana%2066,%20Montopoli%20in%20Sabina%20RI&t=&z=14&ie=UTF8&iwloc=&output=embed">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Dettagli parcheggio e strada -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="flex items-center gap-3 bg-stone-50 p-3 rounded-xl border border-stone-200/70">
+              <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-sm">
+                P
+              </div>
+              <div class="text-xs">
+                <strong class="text-stone-900 block font-bold">Ampio Parcheggio in Loco</strong>
+                <span class="text-stone-500">Nessun problema di posto per grandi comitive.</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 bg-stone-50 p-3 rounded-xl border border-stone-200/70">
+              <div class="w-8 h-8 rounded-lg bg-brand-green text-white flex items-center justify-center text-sm">
+                <i class="fa-solid fa-signs-post"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-stone-900 block font-bold">Zona Ponte Sfondato</strong>
+                <span class="text-stone-500">Facile da raggiungere lungo la SS 313 / Via Ternana.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contatti" class="py-16 bg-brand-green text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-brand-greenDark/80 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-brand-green/50 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        
+        <div class="space-y-3 text-center lg:text-left max-w-xl">
+          <span class="bg-brand-yellow text-stone-950 font-bold text-xs uppercase px-3 py-1 rounded-full inline-block">
+            Siamo a tua disposizione
+          </span>
+          <h3 class="font-serif text-3xl sm:text-4xl font-bold">Vuoi prenotare o chiedere informazioni?</h3>
+          <p class="text-stone-200 text-sm sm:text-base leading-relaxed">
+            Chiamaci direttamente al numero fisso o scrivici in tempo reale su WhatsApp per verificare la disponibilità dei tavoli o richiedere un menù speciale.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+          <!-- Chiamata Telefonica -->
+          <a href="tel:324 868 7392" class="w-full sm:w-auto bg-white text-brand-greenDark hover:bg-stone-100 font-bold px-7 py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-3">
+            <i class="fa-solid fa-phone text-brand-green"></i>
+            <span class="text-base">324 868 7392</span>
+          </a>
+
+          <!-- WhatsApp Istantaneo -->
+          <a href="https://wa.me/393248687392?text=Salve%20vorrei%20prenotare%20un%20tavolo%20alla%20Cascina" 
+             target="_blank" rel="noopener noreferrer" 
+             class="w-full sm:w-auto bg-brand-yellow hover:bg-brand-yellowHover text-stone-950 font-bold px-7 py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-3">
+            <i class="fa-brands fa-whatsapp text-xl text-stone-950"></i>
+            <span class="text-base">324 868 7392</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-stone-950 text-stone-400 text-sm pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-stone-800/80">
+        
+        <!-- Colonna 1: Logo & Identità -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 relative flex-shrink-0">
+              <svg viewBox="0 0 160 140" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="80" cy="80" rx="56" ry="50" fill="#F5B324"/>
+                <path d="M24 82 L80 34 L136 82 L128 92 L80 50 L32 92 Z" fill="#ffffff"/>
+                <rect x="100" y="32" width="12" height="22" fill="#ffffff" rx="2"/>
+                <path d="M18 90 L18 115 M26 88 L26 115 M34 90 L34 115 M16 100 L36 100" stroke="#4ade80" stroke-width="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-xl text-white">La Nuova Cascina</h4>
+              <span class="text-xs text-brand-yellow font-semibold tracking-wider uppercase">Agriturismo • Pizzeria</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            L'autenticità dei prodotti a km 0, la passione per la carne locale e la fragranza della pizza al forno a legna nella Sabina reatina.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-stone-900 hover:bg-brand-green text-stone-300 hover:text-white flex items-center justify-center transition-colors" title="Instagram">
+              <i class="fa-brands fa-instagram text-base"></i>
+            </a>
+            <a href="https://wa.me/393248687392" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-stone-900 hover:bg-emerald-600 text-stone-300 hover:text-white flex items-center justify-center transition-colors" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+            </a>
+            <a href="tel:324 868 7392" class="w-9 h-9 rounded-lg bg-stone-900 hover:bg-brand-yellow hover:text-stone-950 text-stone-300 flex items-center justify-center transition-colors" title="Chiama">
+              <i class="fa-solid fa-phone text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Colonna 2: Navigazione Rapida -->
+        <div>
+          <h4 class="font-serif font-bold text-white text-base mb-4 tracking-wide">Navigazione</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#home" class="hover:text-brand-yellow transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-brand-green"></i> Home</a></li>
+            <li><a href="#chi-siamo" class="hover:text-brand-yellow transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-brand-green"></i> La Nostra Storia & Prodotti</a></li>
+            <li><a href="#menu" class="hover:text-brand-yellow transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-brand-green"></i> Menù & Pizzeria</a></li>
+            <li><a href="#eventi" class="hover:text-brand-yellow transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-brand-green"></i> Feste & Cerimonie</a></li>
+            <li><a href="#orari" class="hover:text-brand-yellow transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-brand-green"></i> Orari di Apertura</a></li>
+            <li><a href="#contatti" class="hover:text-brand-yellow transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-brand-green"></i> Dove Siamo</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonna 3: Orari e Servizi -->
+        <div>
+          <h4 class="font-serif font-bold text-white text-base mb-4 tracking-wide">Orari di Servizio</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex justify-between border-b border-stone-900 pb-1.5">
+              <span>Giovedì - Domenica:</span>
+              <strong class="text-stone-200">Pranzo e Cena</strong>
+            </li>
+            <li class="flex justify-between border-b border-stone-900 pb-1.5">
+              <span>Forno a Legna (Pizza):</span>
+              <strong class="text-amber-400">Solo a Cena</strong>
+            </li>
+            <li class="flex justify-between border-b border-stone-900 pb-1.5">
+              <span>Lunedì - Mercoledì:</span>
+              <span class="text-red-400 font-semibold">Chiuso</span>
+            </li>
+            <li class="pt-2 text-stone-400">
+              <i class="fa-solid fa-square-parking text-brand-yellow mr-1"></i> Ampio parcheggio gratuito all'interno.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Colonna 4: Contatti & Dati Legali -->
+        <div>
+          <h4 class="font-serif font-bold text-white text-base mb-4 tracking-wide">Recapiti & Sede</h4>
+          <address class="not-italic text-xs space-y-2.5">
+            <p class="flex items-start gap-2.5">
+              <i class="fa-solid fa-map-pin text-brand-yellow mt-0.5"></i>
+              <span>Via Ternana 66, 02034 Montopoli in Sabina (RI) - Fraz. Ponte Sfondato</span>
+            </p>
+            <p class="flex items-center gap-2.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+              <a href="https://wa.me/393248687392" target="_blank" rel="noopener noreferrer" class="hover:text-white">Mobile/WA: 324 868 7392</a>
+            </p>
+            <p class="flex items-center gap-2.5 pt-1 text-stone-400">
+              <i class="fa-solid fa-id-card text-brand-yellow"></i>
+              <span>P.IVA: <strong class="text-stone-300 font-mono">[INSERIRE P.IVA QUI]</strong></span>
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Copyright e Disclaimer Legale -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
+        <p>© 2026 Agriturismo La Nuova Cascina - Tutti i diritti riservati.</p>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="hover:underline">Cookie Policy</a>
+          <span>•</span>
+          <span>Montopoli di Sabina (Rieti)</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-stone-200 relative transform transition-all animate-scale-up">
+      
+      <!-- Close Button -->
+      <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-700 p-2 rounded-full hover:bg-stone-100 transition-colors" aria-label="Chiudi">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-900 mx-auto flex items-center justify-center text-xl mb-3">
+          <i class="fa-regular fa-calendar-check"></i>
+        </div>
+        <h3 class="font-serif font-bold text-2xl text-stone-900">Prenota il Tuo Tavolo</h3>
+        <p class="text-xs text-stone-500 mt-1">Scegli come preferisci metterti in contatto con noi per confermare la tua presenza.</p>
+      </div>
+
+      <!-- Quick Interactive Form that constructs a WhatsApp link -->
+      <form id="modalBookingForm" onsubmit="handleQuickReserve(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Nome e Cognome *</label>
+          <input type="text" id="resName" required placeholder="Es. Laura Bianchi" 
+                 class="w-full text-sm px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-stone-700 uppercase mb-1">N° Persone *</label>
+            <input type="number" id="resGuests" required min="1" max="50" value="4" 
+                   class="w-full text-sm px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Turno *</label>
+            <select id="resMeal" class="w-full text-sm px-3 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green outline-none bg-white">
+              <option value="Pranzo">Pranzo</option>
+              <option value="Cena (Anche Pizza)">Cena</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Data Desiderata *</label>
+          <input type="date" id="resDate" required 
+                 class="w-full text-sm px-4 py-2.5 rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-green outline-none">
+        </div>
+
+        <div class="pt-2 space-y-2.5">
+          <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Conferma Richiesta su WhatsApp</span>
+          </button>
+
+          <a href="tel:07651940931" class="w-full bg-stone-100 hover:bg-stone-200 text-stone-800 font-semibold py-3 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 text-xs">
+            <i class="fa-solid fa-phone text-stone-600"></i>
+            <span>Oppure chiama il Fisso: 0765 1940931</span>
+          </a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-2.5">
+    
+    <!-- Floating Phone Button -->
+    <a href="tel:07651940931" 
+       class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-brand-green hover:bg-brand-greenDark text-white shadow-xl flex items-center justify-center transition-transform transform hover:scale-110 active:scale-95 border-2 border-white"
+       title="Chiama la Cascina">
+      <i class="fa-solid fa-phone text-lg sm:text-xl"></i>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/393248687392?text=Buongiorno%2C%20vorrei%20informazioni%20per%20un%20tavolo%20presso%20La%20Nuova%20Cascina" 
+       target="_blank" rel="noopener noreferrer"
+       class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-2xl flex items-center justify-center transition-transform transform hover:scale-110 active:scale-95 border-2 border-white"
+       title="Scrivici su WhatsApp">
+      <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+    </a>
+
+  </div>
+
+  <script>
+    // Mobile Drawer Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      }
+    });
+
+    // Close mobile menu on anchor click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      });
+    });
+
+    // Booking Modal controls
+    const bookingModal = document.getElementById('bookingModal');
+    function openBookingModal() {
+      bookingModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      // Set default minimum date to today
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('resDate');
+      if (dateInput) {
+        dateInput.min = today;
+        if (!dateInput.value) dateInput.value = today;
+      }
+    }
+
+    function closeBookingModal() {
+      bookingModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal clicking outside
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        closeBookingModal();
+      }
+    });
+
+    // Escape key closes modal
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !bookingModal.classList.contains('hidden')) {
+        closeBookingModal();
+      }
+    });
+
+    // Handle Quick Reservation from Modal via WhatsApp
+    function handleQuickReserve(e) {
+      e.preventDefault();
+      const name = document.getElementById('resName').value.trim();
+      const guests = document.getElementById('resGuests').value;
+      const meal = document.getElementById('resMeal').value;
+      const date = document.getElementById('resDate').value;
+
+      const message = `Buongiorno La Nuova Cascina! Vorrei verificare la disponibilità per un tavolo:\n- Nome: ${name}\n- Persone: ${guests}\n- Data: ${date}\n- Turno: ${meal}`;
+      const encodedMsg = encodeURIComponent(message);
+      
+      closeBookingModal();
+      window.open(`https://wa.me/393248687392?text=${encodedMsg}`, '_blank');
+    }
+
+    // Handle Event Quote Form via WhatsApp
+    function handleEventSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('eventName').value.trim();
+      const phone = document.getElementById('eventPhone').value.trim();
+      const type = document.getElementById('eventType').value;
+      const guests = document.getElementById('eventGuests').value || 'Da definire';
+      const date = document.getElementById('eventDate').value || 'Da definire';
+
+      const message = `Buongiorno! Vorrei richiedere un preventivo per un evento/festa presso La Nuova Cascina:\n- Referente: ${name}\n- Telefono: ${phone}\n- Tipo Evento: ${type}\n- Invitati previsti: ${guests}\n- Data indicativa: ${date}`;
+      const encodedMsg = encodeURIComponent(message);
+
+      window.open(`https://wa.me/393248687392?text=${encodedMsg}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
